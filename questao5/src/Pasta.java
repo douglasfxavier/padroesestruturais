@@ -41,7 +41,7 @@ public class Pasta implements IDiretorio {
             pasta.listar(tab);
             String tab2 = tab + "\t";
             for (Arquivo arquivo : pasta.getArquivos()){
-                System.out.println(tab2 + arquivo.getNome());
+                System.out.println(String.format("%s%s %s KB",tab2, arquivo.getNome(),arquivo.getTamanho()));
 
             }
         }
